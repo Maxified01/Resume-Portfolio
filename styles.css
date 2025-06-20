@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -209,19 +209,7 @@ section {
     font-size: 1.2rem;
 }
 
-.profile-placeholder {
-    width: 250px;
-    height: 250px;
-    background: linear-gradient(135deg, var(--secondary), var(--accent));
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 6rem;
-    color: white;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
+/* Profile image styles */
 .profile-img {
     width: 250px;
     height: 250px;
@@ -492,5 +480,30 @@ footer {
     
     .section-title {
         font-size: 2rem;
+    }
+    
+    /* Center the profile image on mobile */
+    .about-image {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .profile-img {
+        width: 200px;
+        height: 200px;
     }
 }
